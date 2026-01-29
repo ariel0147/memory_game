@@ -3,18 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory Game Professional</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Memory Game Pro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="./1.css">
 </head>
 <body>
 <h1 id="name_game">MEMORY GAME</h1>
 
+<div class="stats-container">
+    <div class="stat-box">
+        <i class="fa-solid fa-clock"></i>
+        <span id="timer">זמן: 00:00</span>
+    </div>
+    <div class="stat-box">
+        <i class="fa-solid fa-shoe-prints"></i>
+        <span id="moves">מהלכים: 0</span>
+    </div>
+</div>
+
 <section id="background_game">
     <div id="body_game"></div>
 </section>
 
-<button onclick="start()" id="start">START GAME <i class="fa fa-play-circle"></i></button>
+<button onclick="start()" id="start">התחל משחק <i class="fa-solid fa-play"></i></button>
 
 <script src="./1.js"></script>
 </body>
